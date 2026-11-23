@@ -22,7 +22,7 @@ These are small prototype trials. The table evaluates step counts, while the ult
 
 Use the original Nano 33 BLE with its LSM9DS1 and connect the ultrasonic trigger to D9 and the echo to D10, with shared ground. The Nano GPIO is 3.3 V only. Level-shift a 5 V echo signal before connecting it.
 
-Compile with `bash scripts/build.sh` from the repository root. Upload the sketch in `ist-submission/entrega`, then open the serial monitor at 9600 baud or connect to **PM belo** and subscribe to characteristic `12345678-1234-5678-1234-56789abcdef1`. The technical report records the walking conditions. The signal plots below are preserved as published figures. The submission contains no raw IMU time series for regenerating them.
+Compile with `bash scripts/build.sh` from the repository root. The archived sketch contains an identifier typo, `filtererdDistance`. The build script replaces it with `filteredDistance` in a temporary copy. Make that same one-line correction in your own copy before uploading through Arduino IDE. Open the serial monitor at 9600 baud or connect to **PM belo** and subscribe to characteristic `12345678-1234-5678-1234-56789abcdef1`. The report records the walking conditions. The four figures are preserved from the submission, which contains no raw IMU time series for regenerating the signal plots.
 
 ## Original report figures
 

@@ -23,7 +23,7 @@ bash scripts/build.sh
 python3 scripts/summarize_trials.py
 ```
 
-The build script installs pinned board and library versions and compiles both sketches for the original Nano 33 BLE. The Python script verifies the nine trial counts and reproduces the published mean errors from the rounded per-trial errors in the report.
+The build script installs pinned board and library versions and compiles both sketches for the original Nano 33 BLE. For the IST sketch, it corrects the submitted identifier typo in a temporary build copy. The Python script verifies the nine trial counts and reproduces the published mean errors from the rounded per-trial errors in the report.
 
 ## Portfolio implementation
 
