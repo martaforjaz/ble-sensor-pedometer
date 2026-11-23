@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="325" viewBox="0 0 900 325" font-family="Arial,sans-serif" role="img">
+<title>Mean absolute step-count error by walking condition</title>
+<rect width="900" height="325" fill="white"/>
+<text x="32" y="46" fill="#16265a" font-size="26" font-weight="700">Step counts were closest during straight walking</text>
+<text x="32" y="76" fill="#526579" font-size="17">Mean absolute percentage error · three trials per condition</text>
+<text x="32" y="137" fill="#293244" font-size="19">Straight walk</text>
+<rect x="218" y="118" width="496" height="24" rx="4" fill="#eef1f6"/>
+<rect x="218" y="118" width="77.20" height="24" rx="4" fill="#16265a"/>
+<text x="731" y="137" fill="#16265a" font-size="19" font-weight="700">1.25%</text>
+<text x="32" y="193" fill="#293244" font-size="19">Slow walk</text>
+<rect x="218" y="174" width="496" height="24" rx="4" fill="#eef1f6"/>
+<rect x="218" y="174" width="289.23" height="24" rx="4" fill="#16265a"/>
+<text x="731" y="193" fill="#16265a" font-size="19" font-weight="700">4.66%</text>
+<text x="32" y="249" fill="#293244" font-size="19">Irregular pace</text>
+<rect x="218" y="230" width="496" height="24" rx="4" fill="#eef1f6"/>
+<rect x="218" y="230" width="451.68" height="24" rx="4" fill="#935784"/>
+<text x="731" y="249" fill="#935784" font-size="19" font-weight="700">7.29%</text>
+<text x="32" y="300" fill="#526579" font-size="16">Recalculated from the manual and detected counts in Table I of the IST report.</text></svg>

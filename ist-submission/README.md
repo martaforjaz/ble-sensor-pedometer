@@ -18,6 +18,8 @@ These are small prototype trials. The table evaluates step counts, while the ult
 
 [Download the nine trial records as CSV](trials.csv). From the repository root, run `python3 scripts/summarize_trials.py` to verify the per-trial rounding and reproduce the scenario means. The script also prints means recalculated directly from step counts, which can differ slightly because of rounding.
 
+![Mean absolute step-count error recalculated from manual and detected counts.](figures/trial-errors.svg)
+
 ## Run the submitted firmware
 
 Use the original Nano 33 BLE with its LSM9DS1 and connect the ultrasonic trigger to D9 and the echo to D10, with shared ground. The Nano GPIO is 3.3 V only. Level-shift a 5 V echo signal before connecting it.

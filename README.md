@@ -8,7 +8,9 @@ An Arduino portfolio prototype that counts steps from an onboard accelerometer a
 
 ## Original IST prototype
 
-The submitted prototype used register-level I²C, interrupt-based ultrasonic ranging, and peak–valley step detection. Across three trials per condition, the team reported mean step-count errors of **1.27%** for straight walking, **4.67%** for slow walking, and **7.30%** for irregular pace. These results apply to the submitted firmware.
+The submitted prototype used register-level I²C, interrupt-based ultrasonic ranging, and peak–valley step detection. Recalculating mean absolute step-count error from Table I gives **1.25%** for straight walking, **4.66%** for slow walking, and **7.29%** for irregular pace. The report's printed averages differ slightly because they use rounded trial percentages.
+
+![Mean absolute step-count error calculated from the nine reported trials.](ist-submission/figures/trial-errors.svg)
 
 ![Original Arduino and ultrasonic sensor prototype assembled on a breadboard](ist-submission/figures/Im4.jpg)
 
