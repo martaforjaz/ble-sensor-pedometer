@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 346" width="1080" height="346" font-family="Arial, sans-serif" role="img">
+  <title>Two sensing paths converge in a BLE telemetry packet</title>
+  <rect width="1080" height="346" fill="#fff"/>
+  <text x="34" y="48" font-size="33" font-weight="700" fill="#173457">From sensor readings to Bluetooth telemetry</text>
+  <text x="34" y="82" font-size="20" fill="#526579">Arduino Nano 33 BLE · On-device step counting and wall ranging</text>
+  <g fill="#eaf0f6">
+    <rect x="34" y="115" width="252" height="78" rx="7"/><rect x="34" y="212" width="252" height="78" rx="7"/>
+    <rect x="332" y="115" width="346" height="78" rx="7"/><rect x="332" y="212" width="346" height="78" rx="7"/>
+  </g>
+  <rect x="742" y="164" width="302" height="78" rx="7" fill="#f4eaf1"/>
+  <g fill="#173457" font-size="22" font-weight="700">
+    <text x="50" y="147">LSM9DS1 accelerometer</text><text x="50" y="244">Ultrasonic sensor</text>
+    <text x="348" y="147">Magnitude and step detection</text><text x="348" y="244">Echo duration to range</text>
+    <text x="758" y="196">BLE and serial output</text>
+  </g>
+  <g fill="#526579" font-size="18">
+    <text x="50" y="174">Three axes of acceleration</text><text x="50" y="271">Trigger and echo pulse</text>
+    <text x="348" y="174">Adaptive baseline and debounce</text><text x="348" y="271">Wall distance or missing echo</text>
+    <text x="758" y="223">Step count and range in cm</text>
+  </g>
+  <g fill="none" stroke="#935784" stroke-width="3">
+    <path d="M294 154h30m-8-6 8 6-8 6M294 251h30m-8-6 8 6-8 6"/>
+    <path d="M685 154h18v49h30m-8-6 8 6-8 6M685 251h18v-48"/>
+  </g>
+  <text x="34" y="328" font-size="17" fill="#526579">Firmware architecture · schematic illustration</text>
+</svg>
