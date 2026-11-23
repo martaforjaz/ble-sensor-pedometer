@@ -4,6 +4,16 @@ An Arduino portfolio prototype that counts steps from an onboard accelerometer a
 
 ![Two sensing paths feed one telemetry stream: the IMU feeds step detection and the ultrasonic sensor feeds wall ranging.](figures/signal-flow.svg)
 
+## Original IST prototype
+
+The submitted prototype used register-level I²C, interrupt-based ultrasonic ranging, and peak–valley step detection. Across three trials per condition, the team reported mean step-count errors of **1.27%** for straight walking, **4.67%** for slow walking, and **7.30%** for irregular pace. These results apply to the submitted firmware.
+
+![Original Arduino and ultrasonic sensor prototype assembled on a breadboard](ist-submission/figures/Im4.jpg)
+
+[Original firmware](ist-submission/entrega/entrega.ino) · [Submitted report with personal details redacted](ist-submission/report.pdf) · [Trial counts and signal plots](ist-submission/)
+
+## Portfolio implementation
+
 ## Hardware and setup
 
 - Original [Arduino Nano 33 BLE](https://docs.arduino.cc/hardware/nano-33-ble/) with the LSM9DS1.
