@@ -12,4 +12,5 @@ jobs:
           version: '1.2.2'
       - run: bash scripts/build.sh
       - run: python3 scripts/summarize_trials.py
-      - run: git diff --exit-code -- ist-submission/figures/trial-errors.svg
+      - run: python3 scripts/style_archive_figures.py
+      - run: git diff --exit-code -- ist-submission/figures/

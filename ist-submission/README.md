@@ -30,16 +30,18 @@ Compile with `bash scripts/build.sh` from the repository root. The archived sket
 
 **Prototype circuit.** The Arduino Nano 33 BLE and ultrasonic module on a breadboard.
 
-![Prototype circuit photograph](figures/Im4.jpg)
+![Prototype circuit photograph](figures/prototype.svg)
 
 **Walking trace.** Approximately 120 seconds of filtered dynamic acceleration.
 
-![Dynamic acceleration versus time](figures/Im5.jpg)
+![Dynamic acceleration versus time](figures/walking-trace.svg)
 
 **Filtering detail.** Raw and dynamic acceleration over a short window.
 
-![Raw and filtered acceleration signals](figures/Im6.png)
+![Raw and filtered acceleration signals](figures/filtering-detail.svg)
 
 **Frequency analysis.** FFT of the raw accelerometer signal.
 
-![Raw acceleration frequency spectrum](figures/Im7.png)
+![Raw acceleration frequency spectrum](figures/frequency-spectrum.svg)
+
+Run `python3 scripts/style_archive_figures.py` from the repository root to rebuild these display panels from the original report images.

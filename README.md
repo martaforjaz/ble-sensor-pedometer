@@ -12,7 +12,7 @@ The submitted prototype used register-level I²C, interrupt-based ultrasonic ran
 
 ![Mean absolute step-count error calculated from the nine reported trials.](ist-submission/figures/trial-errors.svg)
 
-![Original Arduino and ultrasonic sensor prototype assembled on a breadboard](ist-submission/figures/Im4.jpg)
+![Original Arduino and ultrasonic sensor prototype assembled on a breadboard](ist-submission/figures/prototype.svg)
 
 [Original firmware](ist-submission/entrega/entrega.ino) · [Submitted report with personal details redacted](ist-submission/report.pdf) · [Trial counts and signal plots](ist-submission/)
 
