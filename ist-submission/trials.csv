@@ -1,0 +1,10 @@
+scenario,distance_m,trial,manual_steps,detected_steps,reported_error_pct
+Straight walk,60,1,80,79,1.3
+Straight walk,60,2,82,81,1.2
+Straight walk,60,3,79,78,1.3
+Slow walk,40,1,64,61,4.7
+Slow walk,40,2,66,63,4.5
+Slow walk,40,3,63,60,4.8
+Irregular pace,30,1,50,47,6.0
+Irregular pace,30,2,52,48,7.7
+Irregular pace,30,3,49,45,8.2

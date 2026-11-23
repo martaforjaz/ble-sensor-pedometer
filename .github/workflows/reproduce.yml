@@ -1,0 +1,14 @@
+name: Reproduce builds and trial summaries
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/setup-arduino-cli@v2
+        with:
+          version: '1.2.2'
+      - run: bash scripts/build.sh
+      - run: python3 scripts/summarize_trials.py

@@ -1,5 +1,7 @@
 # BLE Sensor Pedometer
 
+[![Reproducibility workflow](https://github.com/martaforjaz/ble-sensor-pedometer/actions/workflows/reproduce.yml/badge.svg)](https://github.com/martaforjaz/ble-sensor-pedometer/actions/workflows/reproduce.yml)
+
 An Arduino portfolio prototype that counts steps from an onboard accelerometer and sends the count alongside ultrasonic wall-range readings over Bluetooth Low Energy.
 
 ![Two sensing paths feed one telemetry stream: the IMU feeds step detection and the ultrasonic sensor feeds wall ranging.](figures/signal-flow.svg)
@@ -11,6 +13,17 @@ The submitted prototype used register-level I²C, interrupt-based ultrasonic ran
 ![Original Arduino and ultrasonic sensor prototype assembled on a breadboard](ist-submission/figures/Im4.jpg)
 
 [Original firmware](ist-submission/entrega/entrega.ino) · [Submitted report with personal details redacted](ist-submission/report.pdf) · [Trial counts and signal plots](ist-submission/)
+
+## Reproduce the build and results
+
+From the repository root, with Arduino CLI 1.2.2 and Python 3 available:
+
+```bash
+bash scripts/build.sh
+python3 scripts/summarize_trials.py
+```
+
+The build script installs pinned board and library versions and compiles both sketches for the original Nano 33 BLE. The Python script verifies the nine trial counts and reproduces the published mean errors from the rounded per-trial errors in the report.
 
 ## Portfolio implementation
 

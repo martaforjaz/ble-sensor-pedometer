@@ -16,6 +16,14 @@ Table I of the submitted report gives three trials per walking condition. Each p
 
 These are small prototype trials. The table evaluates step counts, while the ultrasound sensor provides a wall-relative range for estimating step length.
 
+[Download the nine trial records as CSV](trials.csv). From the repository root, run `python3 scripts/summarize_trials.py` to verify the per-trial rounding and reproduce the scenario means. The script also prints means recalculated directly from step counts, which can differ slightly because of rounding.
+
+## Run the submitted firmware
+
+Use the original Nano 33 BLE with its LSM9DS1 and connect the ultrasonic trigger to D9 and the echo to D10, with shared ground. The Nano GPIO is 3.3 V only. Level-shift a 5 V echo signal before connecting it.
+
+Compile with `bash scripts/build.sh` from the repository root. Upload the sketch in `ist-submission/entrega`, then open the serial monitor at 9600 baud or connect to **PM belo** and subscribe to characteristic `12345678-1234-5678-1234-56789abcdef1`. The technical report records the walking conditions. The signal plots below are preserved as published figures. The submission contains no raw IMU time series for regenerating them.
+
 ## Original report figures
 
 **Prototype circuit.** The Arduino Nano 33 BLE and ultrasonic module on a breadboard.
