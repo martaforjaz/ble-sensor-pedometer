@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="444" viewBox="0 0 1120 444" font-family="Arial, sans-serif" role="img" aria-labelledby="title desc">
+  <title id="title">How the original IST pedometer combines two sensors</title>
+  <desc id="desc">The accelerometer detects steps. Ultrasonic ranging estimates changes in wall distance. At each detected step the firmware updates step length and then sends telemetry over Bluetooth.</desc>
+  <defs>
+    <marker id="plum" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1l7 4-7 4" fill="none" stroke="#935784" stroke-width="1.5"/></marker>
+    <marker id="navy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1l7 4-7 4" fill="none" stroke="#16265a" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1120" height="444" fill="white"/>
+  <text x="32" y="47" font-size="30" font-weight="700" fill="#16265a">How the original IST pedometer combines two sensors</text>
+  <text x="32" y="80" font-size="17" fill="#526579">Arduino Nano 33 BLE · signal processing, step-length estimation and wireless telemetry</text>
+  <text x="32" y="126" font-size="22" font-weight="700" fill="#935784">1. Inertial step detection</text>
+  <text x="32" y="270" font-size="22" font-weight="700" fill="#16265a">2. Ultrasonic wall ranging</text>
+  <g fill="#faf5f9" stroke="#935784">
+    <rect x="32" y="144" width="170" height="76" rx="11"/>
+    <rect x="226" y="144" width="182" height="76" rx="11"/>
+    <rect x="432" y="144" width="184" height="76" rx="11"/>
+  </g>
+  <g fill="#f4f5fa" stroke="#16265a">
+    <rect x="32" y="288" width="170" height="76" rx="11"/>
+    <rect x="226" y="288" width="182" height="76" rx="11"/>
+    <rect x="432" y="288" width="184" height="76" rx="11"/>
+    <rect x="688" y="214" width="184" height="80" rx="11"/>
+    <rect x="916" y="214" width="172" height="80" rx="11"/>
+  </g>
+  <g fill="none" stroke="#935784" stroke-width="2" marker-end="url(#plum)">
+    <path d="M206 182h16"/><path d="M412 182h16"/><path d="M621 182h35v55h27"/>
+  </g>
+  <g fill="none" stroke="#16265a" stroke-width="2" marker-end="url(#navy)">
+    <path d="M206 326h16"/><path d="M412 326h16"/><path d="M621 326h35v-55h27"/><path d="M877 254h34"/>
+  </g>
+  <g text-anchor="middle" fill="#293244" font-size="17" font-weight="700">
+    <text x="117" y="175">LSM9DS1 IMU</text><text x="317" y="175">Filter acceleration</text><text x="524" y="175">Detect step</text>
+    <text x="117" y="319">HC-SR04</text><text x="317" y="319">Measure echo</text><text x="524" y="319">Filter wall range</text>
+    <text x="780" y="246">Estimate step length</text><text x="1002" y="246">Send over BLE</text>
+  </g>
+  <g text-anchor="middle" fill="#526579" font-size="14">
+    <text x="117" y="198">Read three axes via I²C</text><text x="317" y="198">Magnitude and baseline</text><text x="524" y="198">Peak, valley and debounce</text>
+    <text x="117" y="342">Trigger an ultrasonic pulse</text><text x="317" y="342">Interrupts time both edges</text><text x="524" y="342">Median of three readings</text>
+    <text x="780" y="269">Range change or fallback</text><text x="1002" y="269">Step and sensor readings</text>
+  </g>
+  <path d="M32 391h1056" stroke="#dee3ec"/>
+  <text x="32" y="417" font-size="15" fill="#526579">Two sensor streams meet at each detected step. Wall range depends on a fixed reflecting surface.</text>
+</svg>

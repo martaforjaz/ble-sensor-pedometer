@@ -4,7 +4,7 @@
 
 An Arduino portfolio prototype that counts steps from an onboard accelerometer and sends the count alongside ultrasonic wall-range readings over Bluetooth Low Energy.
 
-![Two sensing paths feed one telemetry stream: the IMU feeds step detection and the ultrasonic sensor feeds wall ranging.](figures/signal-flow.svg)
+![Original IST firmware architecture. Inertial step detection and ultrasonic wall ranging feed step-length estimation and BLE telemetry.](figures/ist-signal-flow.svg)
 
 ## Original IST prototype
 
@@ -26,6 +26,8 @@ python3 scripts/summarize_trials.py
 The build script installs pinned board and library versions and compiles both sketches for the original Nano 33 BLE. The Python script verifies the nine trial counts and reproduces the published mean errors from the rounded per-trial errors in the report.
 
 ## Portfolio implementation
+
+![Portfolio firmware architecture: independent step counting and wall ranging feed BLE and serial telemetry.](figures/signal-flow.svg)
 
 ## Hardware and setup
 
