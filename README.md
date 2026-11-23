@@ -4,13 +4,16 @@
 
 An Arduino portfolio prototype that counts steps from an onboard accelerometer and sends the count alongside ultrasonic wall-range readings over Bluetooth Low Energy.
 
-![Original IST firmware architecture. Inertial step detection and ultrasonic wall ranging feed step-length estimation and BLE telemetry.](figures/ist-signal-flow.svg)
+![Original IST firmware architecture. Inertial step detection and ultrasonic wall ranging feed step-length estimation and BLE telemetry.](figures/paper-workflow.svg)
+The vector figures are available as PDF in [figures/](figures/). With Python, NumPy and Matplotlib installed, run `python paper_figures.py` to regenerate them. The visual conventions follow [figures4papers](https://github.com/ChenLiu-1996/figures4papers).
 
 ## Original IST prototype
 
 The submitted prototype used register-level I²C, interrupt-based ultrasonic ranging, and peak–valley step detection. Recalculating mean absolute step-count error from Table I gives **1.25%** for straight walking, **4.66%** for slow walking, and **7.29%** for irregular pace. The report's printed averages differ slightly because they use rounded trial percentages.
 
-![Mean absolute step-count error calculated from the nine reported trials.](ist-submission/figures/trial-errors.svg)
+![Mean absolute step-count error calculated from the nine reported trials.](figures/paper-results.svg)
+
+Each point is one original IST trial. The dashed line marks exact agreement and the short horizontal marks show mean absolute percentage error.
 
 ![Original Arduino and ultrasonic sensor prototype assembled on a breadboard](ist-submission/figures/prototype.svg)
 
@@ -29,7 +32,7 @@ The build script installs pinned board and library versions and compiles both sk
 
 ## Portfolio implementation
 
-![Portfolio firmware architecture: independent step counting and wall ranging feed BLE and serial telemetry.](figures/signal-flow.svg)
+[Portfolio firmware diagram](figures/signal-flow.svg)
 
 ## Hardware and setup
 
